@@ -1,0 +1,29 @@
+{
+  "name": "dumb-binary-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchaser53/dumb-binary-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchaser53/dumb-binary-tree/issues"
+  },
+  "homepage": "https://github.com/rchaser53/dumb-binary-tree#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.11",
+    "jest": "26.0.1",
+    "prettier": "2.0.5",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
