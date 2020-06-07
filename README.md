@@ -1,3 +1,14 @@
+# What's this?
+I want to create the test data to solve the binary tree problem in competition programming like leetcode. There are many problems related to the binary tree in competitive programming. But it's a tough work to create test data. This library help us to create the simple binary tree data.
+
+
+# How To Install
+
+```sh
+$ npm i dumb-binary-tree
+```
+
+
 # How To Use
 
 ```js
