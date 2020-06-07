@@ -18,10 +18,10 @@ export const binary = (input: any[]): Tree | undefined => {
   const dummy = createTree(input.shift());
   let root = dummy;
   let baseStack = [root];
-  while (0 < input.length || 0 < baseStack.length) {
-    const stack = [];
+  while (0 < input.length && 0 < baseStack.length) {
+    const stack: Tree[] = [];
     while (0 < baseStack.length) {
-      const node = baseStack.shift();
+      const node = baseStack.shift()!;
       const left = input.shift();
       const right = input.shift();
 
