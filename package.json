@@ -1,9 +1,10 @@
 {
   "name": "dumb-binary-tree",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "create binary tree using array",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p .",
     "format": "prettier --write {src/*.ts,src/**/*.ts}",
     "test": "jest"
   },
@@ -12,8 +13,8 @@
     "url": "git+https://github.com/rchaser53/dumb-binary-tree.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "rchaser53",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rchaser53/dumb-binary-tree/issues"
   },
