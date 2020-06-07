@@ -1,4 +1,5 @@
 import { binary, createTree } from "../index";
+import { createTooManyInputValues } from "../error";
 
 describe("test", () => {
   test("normal", () => {
@@ -28,5 +29,12 @@ describe("test", () => {
   test("return undefined when input is empty array", () => {
     const node = binary([]);
     expect(node).toEqual(undefined);
+  });
+
+  test("throw error inputs element are too many", () => {
+    const inputs = [1, 2, 3, null, null, null, null, 5];
+    expect(() => {
+      binary(inputs);
+    }).toThrowError(createTooManyInputValues(inputs));
   });
 });

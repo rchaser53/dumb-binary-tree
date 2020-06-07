@@ -1,3 +1,5 @@
+import { createTooManyInputValues } from "./error";
+
 export type Tree = {
   left: Tree | undefined;
   right: Tree | undefined;
@@ -36,6 +38,10 @@ export const binary = (input: any[]): Tree | undefined => {
       }
     }
     baseStack = stack;
+  }
+
+  if (0 < input.length) {
+    throw createTooManyInputValues(input);
   }
 
   return dummy;
